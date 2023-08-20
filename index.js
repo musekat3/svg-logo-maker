@@ -35,3 +35,13 @@ promptUser()
     console.error(error);
   });
 
+function generateSVGCode(text, textColor, shape, shapeColor) {
+  // Generate the SVG code based on the user's input
+  return `
+    <svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+      <${shape} fill="${shapeColor}">
+        <text x="50%" y="50%" fill="${textColor}" text-anchor="middle" dominant-baseline="middle">${text}</text>
+      </${shape}>
+    </svg>
+  `;
+}
