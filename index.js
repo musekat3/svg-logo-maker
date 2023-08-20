@@ -45,3 +45,13 @@ function generateSVGCode(text, textColor, shape, shapeColor) {
     </svg>
   `;
 }
+
+const fs = require('fs');
+
+function saveSVGFile(svgCode) {
+  fs.writeFileSync('logo.svg', svgCode);
+}
+
+function printOutput() {
+  console.log('Generated logo.svg');
+}
