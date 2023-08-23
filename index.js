@@ -1,7 +1,7 @@
-// const inquirer = require('inquirer');
+// import { prompt } from 'inquirer';
 
 // function promptUser() {
-//   return inquirer.prompt([
+//   return prompt([
 //     {
 //       name: 'text',
 //       message: 'Enter the text (up to three characters):',
@@ -46,28 +46,28 @@
 //   `;
 // }
 
-// const fs = require('fs');
+// // const fs = require('fs');
 
 // function saveSVGFile(svgCode) {
-//   fs.writeFileSync('logo.svg', svgCode);
+//   writeFileSync('logo.svg', svgCode);
 // }
 
 // function printOutput() {
 //   console.log('Generated logo.svg');
 // }
 
-// const open = require('open');
+// // const open = require('open');
 
 // function openInBrowser() {
 //   open('logo.svg');
 // }
 
-// const inquirer = require('inquirer');
-// const fs = require('fs');
-// const open = require('open');
+// // const inquirer = require('inquirer');
+// import { writeFileSync } from 'fs';
+// import open from 'open';
 
 // function promptUser() {
-//   return inquirer.prompt([]);
+//   return prompt([]);
 // }
 
 // function generateSVGCode(text, textColor, shape, shapeColor) {
@@ -75,7 +75,7 @@
 // }
 
 // function saveSVGFile(svgCode) {
-//   fs.writeFileSync('logo.svg', svgCode);
+//   writeFileSync('logo.svg', svgCode);
 // }
 
 // function printOutput() {
@@ -97,7 +97,15 @@
 //     console.error(error);
 //   });
 
-const inquirer = require('inquirer');
+
+
+import('inquirer').then((inquirer) => {
+  // Your code using inquirer
+}).catch((error) => {
+  console.error('Failed to import inquirer:', error);
+});
+
+// const inquirer = require('inquirer');
 const fs = require('fs');
 const open = require('open');
 
