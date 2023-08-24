@@ -1,3 +1,5 @@
+//first version of code 
+
 // import { prompt } from 'inquirer';
 
 // function promptUser() {
@@ -98,7 +100,7 @@
 //   });
 
 
-
+//Second version of code to make alterations 
 import('inquirer').then((inquirer) => {
   // Your code using inquirer
 }).catch((error) => {
@@ -106,8 +108,8 @@ import('inquirer').then((inquirer) => {
 });
 
 // const inquirer = require('inquirer');
-const fs = require('fs');
-const open = require('open');
+import { writeFileSync } from 'fs';
+import open from 'open';
 
 function promptUser() {
   return inquirer.prompt([
@@ -148,7 +150,7 @@ function generateSVGCode(text, textColor, shape, shapeColor) {
 }
 
 function saveSVGFile(svgCode) {
-  fs.writeFileSync('logo.svg', svgCode);
+  writeFileSync('logo.svg', svgCode);
 }
 
 function printOutput() {
