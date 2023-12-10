@@ -101,13 +101,8 @@
 
 
 //Second version of code to make alterations 
-import('inquirer').then((inquirer) => {
-  // Your code using inquirer
-}).catch((error) => {
-  console.error('Failed to import inquirer:', error);
-});
+const inquirer = require('inquirer');
 
-// const inquirer = require('inquirer');
 import { writeFileSync } from 'fs';
 import open from 'open';
 

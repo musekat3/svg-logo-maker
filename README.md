@@ -28,6 +28,7 @@ THEN I am shown a 300x200 pixel image that matches the criteria I entered
 # Mock-Up
 ![Screenshot 2023-08-23 221641](https://github.com/musekat3/svg-logo-maker/assets/131501260/7215184b-db64-4877-a707-37dc3acd6fdf)
 
+
 # Functionality
 I keep getting the following error: Error [ERR_REQUIRE_ESM]: require() of ES Module not supported.
 I have done research on this error and will continue to do research on this error to debug it. 
